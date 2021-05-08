@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import './App.css';
 import { cardData } from '../../data/cardData'
+import CardContainer from '../CardContainer/CardContainer';
 
 
 const App = () => {
@@ -17,6 +18,7 @@ const App = () => {
   return (
     <div className="App">
       <button onClick={shuffleCards}>Shuffle</button>
+      <CardContainer deck={deck} />
     </div>
   )
 }
