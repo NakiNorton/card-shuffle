@@ -8,6 +8,5 @@
 .card-container-pile {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
-  margin: 2.5rem 6rem;
+  justify-content: center;
 }
