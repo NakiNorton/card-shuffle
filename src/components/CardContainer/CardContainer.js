@@ -29,7 +29,7 @@ const CardContainer = ({ deck, layout }) => {
               {renderPile()}
             </div> 
           }  
-          { 
+          {layout === 'spread' && 
             <div className='card-container-spread'>   
               {renderSpreadCards()}
             </div>
