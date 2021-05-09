@@ -1,23 +1,43 @@
+import React, { useState } from 'react'
 import Card from '../Card/Card'
+import CardPile from '../CardPile/CardPile'
 import './CardContainer.css';
 
 
-const CardContainer = ({ deck }) => {
+const CardContainer = ({ deck, layout }) => {
 
-  const renderCards = () => {
+  const renderSpreadCards = () => {
     return deck.map(card => {
       return <Card card={card} key={card.id} />
     }) 
   }
 
+  const renderPile = () => {
+    return <CardPile deck={deck} />
+  }
+
   const setError = () => {
-    return <h1>Sorry something went wrong!</h1>
+    return <h1>Sorry something went wrong, please try refreshing the page.</h1>
   }
 
   return (
-    <div className='card-container'>   
-      {deck ? renderCards() : setError() }
-    </div>
+    <>
+      {deck && 
+        <>
+          {layout === 'pile' && 
+            <div className='card-container-pile'>   
+              {renderPile()}
+            </div> 
+          }  
+          { 
+            <div className='card-container-spread'>   
+              {renderSpreadCards()}
+            </div>
+          }
+        </>
+      }
+      {!deck && setError()}
+   </>
   )
 }
 
