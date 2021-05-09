@@ -1,15 +1,47 @@
 .App {
   text-align: center;
+  height: 100vh;
+  padding: 5px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.heading-primary {
+  color: lightseagreen;
+  font-weight: 300;
+} 
+
+.heading-sub, .btn-layout {
+  color: lightseagreen;
+  font-weight: 300;
+  font-size: 1rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.btn {
+  width: 80px;
+  border: none;
+  padding: .5rem;
+  border-radius: 5px;
+}
+
+.btn-shuffle {
+  display: block;
+  margin: 1rem auto;
   color: white;
+  background-color: orangered;
+  width: 180px;
+  text-transform: uppercase;
 }
 
+.btn-layout {
+  margin: 0 .5rem;
+  background-color: transparent;
+}
+
+.active {
+  background-color: whitesmoke;
+  color: lightseagreen;
+}
+
+.btn-layout, .heading-sub {
+  display: inline-block;
+}
