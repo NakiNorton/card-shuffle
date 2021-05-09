@@ -1,5 +1,13 @@
-.card-container {
+.card-container-spread {
   display: flex;
   flex-wrap: wrap;
   padding: 1rem;
+  justify-content: space-around;
+}
+
+.card-container-pile {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 2.5rem 6rem;
 }
