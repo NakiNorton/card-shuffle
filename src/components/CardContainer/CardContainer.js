@@ -17,7 +17,7 @@ const CardContainer = ({ deck, layout }) => {
   }
 
   const setError = () => {
-    return <h1>Sorry something went wrong, please try refreshing the page.</h1>
+    return <h2>Sorry something went wrong, please try refreshing the page.</h2>
   }
 
   return (

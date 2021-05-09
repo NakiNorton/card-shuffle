@@ -17,7 +17,7 @@ const CardPile = ({ deck }) => {
 
       <div className='card-active'>
         {!topCardIndex &&
-          <h2 className='user-msg'>Click on a card to flip it over!</h2>
+          <h2 className='user-msg'>Click on the pile to flip the top card over!</h2>
         }
         {!!topCardIndex &&
           <img className='card-pile-card' src={deck[topCardIndex - 1].imageFront} alt='flipped card' />
