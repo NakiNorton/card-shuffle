@@ -1,0 +1,12 @@
+
+.card-pile-card {
+  height: 80vh;
+  border: 1px solid lightgray; 
+  box-shadow: 5px 5px 5px lightgray;
+  margin: 8px;
+}
+
+.user-msg {
+  margin-top: 50%;
+  text-align: center;
+}
