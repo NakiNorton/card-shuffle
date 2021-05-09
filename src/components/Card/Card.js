@@ -6,7 +6,6 @@ const Card = ({ card }) => {
 
   return (
     <img className='card' src={viewFront ? card.imageFront : card.imageBack} alt={`front of ${card.name} card`} onClick={() => setViewFront(!viewFront)}/>
-
   )
 }
 
