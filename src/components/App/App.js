@@ -6,6 +6,7 @@ import CardContainer from '../CardContainer/CardContainer';
 
 const App = () => {
   const [ deck, setDeck ] = useState(cardData)
+  const [ layout, setLayout ] = useState('spread')
  
   const shuffleCards = () => {
     for (let i = deck.length - 1; i > 0; i--) {
@@ -18,7 +19,9 @@ const App = () => {
   return (
     <div className="App">
       <button onClick={shuffleCards}>Shuffle</button>
-      <CardContainer deck={deck} />
+      <button onClick={() => setLayout('pile')}>Pile</button>
+      <button onClick={() => setLayout('spread')}>Spread</button>
+      <CardContainer deck={deck} layout={layout} />
     </div>
   )
 }
