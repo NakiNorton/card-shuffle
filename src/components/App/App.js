@@ -24,10 +24,25 @@ const App = () => {
     <div className='App'>
       <>
         <h1 className='heading-primary'>Card Shuffle</h1>
-        <button className='btn btn-shuffle' onClick={shuffleCards}>Shuffle</button>
+        <button 
+          className='btn btn-shuffle' 
+          name='shuffle' 
+          onClick={shuffleCards}>
+          Shuffle
+        </button>
         <h3 className='heading-sub'>Change Card Layout:</h3>
-        <button className={`btn btn-layout ${styleBtn('spread')}`} onClick={() => setLayout('spread')}>Spread</button>
-        <button className={`btn btn-layout ${styleBtn('pile')}`} onClick={() => setLayout('pile')}>Pile</button>
+        <button 
+          className={`btn btn-layout ${styleBtn('spread')}`} 
+          name='spread' 
+          onClick={() => setLayout('spread')}>
+          Spread
+        </button>
+        <button 
+          className={`btn btn-layout ${styleBtn('pile')}`} 
+          name='pile' 
+          onClick={() => setLayout('pile')}>
+          Pile
+        </button>
       </>
       <CardContainer deck={deck} layout={layout} />
     </div>
