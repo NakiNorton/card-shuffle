@@ -1,12 +1,7 @@
-.card-container-spread {
+.container {
   display: flex;
   flex-wrap: wrap;
   padding: 1rem;
-  justify-content: space-around;
-}
-
-.card-container-pile {
-  display: flex;
-  flex-direction: row;
   justify-content: center;
 }
+

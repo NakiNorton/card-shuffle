@@ -12,32 +12,22 @@ const CardContainer = ({ deck, layout }) => {
     }) 
   }
 
-  const renderPile = () => {
-    return <CardPile deck={deck} />
-  }
+  const renderPile = () => <CardPile deck={deck} />
 
   const setError = () => {
     return <h2>Sorry something went wrong, please try refreshing the page.</h2>
   }
 
   return (
-    <>
+    <div className='container'>
       {deck && 
         <>
-          {layout === 'pile' && 
-            <div className='card-container-pile'>   
-              {renderPile()}
-            </div> 
-          }  
-          {layout === 'spread' && 
-            <div className='card-container-spread'>   
-              {renderSpreadCards()}
-            </div>
-          }
+          {layout === 'pile' && renderPile()}
+          {layout === 'spread' && renderSpreadCards()}
         </>
       }
       {!deck && setError()}
-   </>
+   </div>
   )
 }
 
