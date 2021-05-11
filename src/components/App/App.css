@@ -1,7 +1,9 @@
 .App {
   text-align: center;
   height: 100vh;
-  padding: 5px;
+  animation: fadeInAnimation ease 5s ;
+  animation-iteration-count: 1; 
+  animation-fill-mode: forwards;
 }
 
 .heading-primary {
@@ -45,3 +47,14 @@
 .btn-layout, .heading-sub {
   display: inline-block;
 }
+
+/* animation */
+@keyframes fadeInAnimation { 
+  0% { 
+    opacity: 0; 
+  } 
+  100% { 
+    opacity: 1; 
+  } 
+}
+ 
