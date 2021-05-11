@@ -3,7 +3,9 @@
   height: 65vh;
   border: .5px solid rgb(223, 222, 222); 
   border-radius: 5px;
-  box-shadow: 5px 5px 5px lightgray;
+  -moz-box-shadow:    5px 5px 5px lightgray;
+  -webkit-box-shadow: 5px 5px 5px lightgray;
+  box-shadow:         5px 5px 5px lightgray;
   margin: 1rem;
   cursor: pointer;
 }
