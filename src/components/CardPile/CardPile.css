@@ -1,16 +1,20 @@
 
+.img-container {
+  width: 25%;
+}
+
 .card-pile-card {
   height: 65vh;
+  margin: 1rem;
   border: .5px solid rgb(223, 222, 222); 
   border-radius: 5px;
   -moz-box-shadow:    5px 5px 5px lightgray;
   -webkit-box-shadow: 5px 5px 5px lightgray;
   box-shadow:         5px 5px 5px lightgray;
-  margin: 1rem;
   cursor: pointer;
 }
 
 .user-msg {
   font-weight: 300;
-  align-self: center;
+  padding-top: 10rem;
 }
