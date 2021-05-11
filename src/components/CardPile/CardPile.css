@@ -1,14 +1,14 @@
 
 .card-pile-card {
-  height: 68vh;
+  height: 65vh;
   border: .5px solid rgb(223, 222, 222); 
   border-radius: 5px;
   box-shadow: 5px 5px 5px lightgray;
-  margin: 1rem 2.5rem;
+  margin: 1rem;
+  cursor: pointer;
 }
 
 .user-msg {
-  padding: 12rem 2rem;
-  text-align: center;
   font-weight: 300;
+  align-self: center;
 }
