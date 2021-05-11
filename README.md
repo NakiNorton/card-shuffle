@@ -15,7 +15,7 @@ View [deployed app](https://card-shuffle.netlify.app/)
 3. Run npm install to update dependencies
 4. Run npm start
 5. Visit http://localhost:3000/ in the browser (or whichever port is provided) to view it in the browser.
-Optional: Run npm test to run test suite
+6. Optional: Run npm test to run test suite
 
 ## Technologies
 - React
