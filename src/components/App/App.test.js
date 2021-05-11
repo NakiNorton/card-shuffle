@@ -54,7 +54,7 @@ describe('App', () => {
     fireEvent.click(screen.getByText('Pile'))
       
     const topCard = screen.getByAltText('top card on the deck')
-    const text = screen.getByText('Click on the pile to flip the top card over!')
+    const text = screen.getByText('Click on the card to flip it over!')
     
     expect(topCard).toBeInTheDocument()
     expect(text).toBeInTheDocument()
