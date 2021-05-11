@@ -1,7 +1,7 @@
 import React from 'react'
 import Card from '../Card/Card'
 import CardPile from '../CardPile/CardPile'
-import './CardContainer.css';
+import './CardContainer.css'
 
 
 const CardContainer = ({ deck, layout }) => {

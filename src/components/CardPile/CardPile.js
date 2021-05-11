@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import './CardPile.css';
+import './CardPile.css'
 
 const CardPile = ({ deck }) => {
   const [ topCardIndex, setTopCardIndex ] = useState(0)

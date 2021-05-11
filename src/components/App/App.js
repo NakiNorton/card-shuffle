@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
-import './App.css';
+import './App.css'
 import { cardData } from '../../data/cardData'
-import CardContainer from '../CardContainer/CardContainer';
+import CardContainer from '../CardContainer/CardContainer'
 
 
 const App = () => {

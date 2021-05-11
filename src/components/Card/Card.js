@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import './Card.css';
+import './Card.css'
 
 const Card = ({ card }) => {
   const [ viewFront, setViewFront ] = useState(true)
