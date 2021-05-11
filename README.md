@@ -7,7 +7,7 @@ Card Shuffle is an application that takes a deck of 52 cards and shuffles them o
 ### Deployed on Netlify: 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/928262d2-66e5-4c8c-a44b-b25c9afb954c/deploy-status)](https://app.netlify.com/sites/card-shuffle/deploys)
 
-View [deployed app](card-shuffle.netlify.app)
+View [deployed app](https://card-shuffle.netlify.app/)
 
 ## Setup
 1. Clone this repository to your local machine
